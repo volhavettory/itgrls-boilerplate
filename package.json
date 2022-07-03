@@ -5,14 +5,19 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "start": "webpack serve --open",
-    "eslint-fix": "eslint --fix"
+    "start": "webpack serve --mode development --env development",
+    "eslint": "npx eslint src",
+    "eslint-fix": "npm run eslint --fix",
+    "prettier": "npx prettier src --check",
+    "prettier-fix": "npm run prettier -- --write",
+    "format": "npm run prettier-fix && npm run eslint-fix"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
+    "@babel/eslint-parser": "^7.5.4",
     "@babel/plugin-proposal-class-properties": "^7.17.12",
     "@babel/preset-env": "^7.18.2",
-    "babel-eslint": "^10.1.0",
+    "babel-eslint": "^10.0.2",
     "babel-loader": "^8.2.5",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^5.2.7",

@@ -9,16 +9,15 @@ module.exports = {
     },
     mode: 'development',
     devtool: 'inline-source-map',
+    target: "web",
     devServer: {
         /** Будет запускать сервер на localhost:8080 в этой папке*/
-        contentBase: path.resolve(__dirname, './dist'),
-        historyApiFallback: true,
+        contentBase: path.join(__dirname, 'dist'),
+        publicPath: '/',
         open: true,
-        compress: true,
-        hot: true,
+        watchContentBase: true,
         port: 8080,
     },
-    watch: true,
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: '[name].bundle.js',
@@ -54,11 +53,14 @@ module.exports = {
         ],
     },
     plugins: [
+        new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, './src/index.html'), // шаблон
             filename: 'index.html', // название выходного файла
+            inject: true,
+            chunks: "all",
+            chunksSortMode: 'none' //fixes bug
         }),
-        new CleanWebpackPlugin(),
-        new webpack.HotModuleReplacementPlugin(),
+        new CleanWebpackPlugin({cleanStaleWebpackAssets:true}),
     ],
 };

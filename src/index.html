@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <title>Boilerplate</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    .conteiner {
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 25px;
+    }
+
+    .card-img-top {
+      width: 50%;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 
 <body>
-  <img src="./images/icon.png" alt="webpack" width="120" />
-  <h1>Вы запустили проект!</h1>
+  <div class="conteiner">
+    <nav class="navbar navbar-dark bg-dark justify-content-between text-centr">
+      <a class="navbar-brand">start bootstrap</a>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Servicas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="conteiner">
+    <div class="jumbotron">
+      <h1 class="display-4">A Welkom</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+        to
+        featured content or information.</p>
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </p>
+    </div>
+  </div>
+  <div class="conteiner">
+    <div class="card-group">
+      <div class="card">
+        <img class="card-img-top" src="/images/turniphead-0042199grkqio.svg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+            additional
+            content. This content is a little bit longer.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="/images/turniphead-0042199grkqio.svg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="/images/turniphead-0042199grkqio.svg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+            additional
+            content. This card has even longer content than the first to show that equal height action.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="conteiner">
+    <footer class="bg-light text-center text-lg-start">
+
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+  </div>
+
+  </footer>
 </body>
+
 </html>

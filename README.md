@@ -24,3 +24,6 @@ Sudo и ключ -g позволяют установить модуль для 
 6. После установки всех пакетов, запускаем сервер, команда 
 
 ```npm run start```
+
+
+Шапка сверстана из макета - https://www.figma.com/file/dCcm01VBlfd9AGCvDXZrhJ/standes.ru?node-id=0%3A1
